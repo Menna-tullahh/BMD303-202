@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13602247-E8E9-4667-BF95-742EC3916F6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>physical_therapy_system</RootNamespace>
+    <AssemblyName>physical_therapy_system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\clinicalSystem\clinicalSystem\bin\Debug\netcoreapp3.1\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\clinicalSystem\clinicalSystem\bin\Debug\netcoreapp3.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\clinicalSystem\clinicalSystem\bin\Debug\netcoreapp3.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.Preview.130.1700.305\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clinical_systemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clinical_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ClassDAL.cs" />
+    <Compile Include="DAL\Connection.cs" />
+    <Compile Include="delete\addNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\addNewUser.Designer.cs">
+      <DependentUpon>addNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\addOldUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\addOldUser.Designer.cs">
+      <DependentUpon>addOldUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListPatient.Designer.cs">
+      <DependentUpon>ListPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logIn.Designer.cs">
+      <DependentUpon>logIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\PatientProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\PatientProfile.Designer.cs">
+      <DependentUpon>PatientProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="delete\Reserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\Reserve.Designer.cs">
+      <DependentUpon>Reserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ucAddNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNewUser.Designer.cs">
+      <DependentUpon>ucAddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddOldUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddOldUser.Designer.cs">
+      <DependentUpon>ucAddOldUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCalendar.Designer.cs">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDailyTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDailyTable.Designer.cs">
+      <DependentUpon>ucDailyTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDashboard.Designer.cs">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPatientProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPatientProfile.Designer.cs">
+      <DependentUpon>ucPatientProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPatients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPatients.Designer.cs">
+      <DependentUpon>ucPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucReserve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucReserve.Designer.cs">
+      <DependentUpon>ucReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVisitDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVisitDetails.Designer.cs">
+      <DependentUpon>ucVisitDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVisits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVisits.Designer.cs">
+      <DependentUpon>ucVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete\Visits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete\Visits.Designer.cs">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="delete\addNewUser.resx">
+      <DependentUpon>addNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\addOldUser.resx">
+      <DependentUpon>addOldUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListPatient.resx">
+      <DependentUpon>ListPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logIn.resx">
+      <DependentUpon>logIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\PatientProfile.resx">
+      <DependentUpon>PatientProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="delete\Reserve.resx">
+      <DependentUpon>Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNewUser.resx">
+      <DependentUpon>ucAddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddOldUser.resx">
+      <DependentUpon>ucAddOldUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCalendar.resx">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDailyTable.resx">
+      <DependentUpon>ucDailyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDashboard.resx">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPatientProfile.resx">
+      <DependentUpon>ucPatientProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPatients.resx">
+      <DependentUpon>ucPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucReserve.resx">
+      <DependentUpon>ucReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVisitDetails.resx">
+      <DependentUpon>ucVisitDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVisits.resx">
+      <DependentUpon>ucVisits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete\Visits.resx">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="clinical_systemDataSet.xsc">
+      <DependentUpon>clinical_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="clinical_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clinical_systemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clinical_systemDataSet.xss">
+      <DependentUpon>clinical_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
